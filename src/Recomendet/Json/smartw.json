@@ -1,0 +1,23 @@
+ [
+
+    {
+        "img":"images/watch1.jpg",
+        "mane": "Single Tour",
+        "Price": "$990"
+    },
+    {
+        "img": "images/watch2.jpg",
+        "mane": "Single Tour",
+        "Price": "$990"
+    },
+    {     
+        "img": "images/watch1.jpg",
+        "mane": "Single Tour",
+        "Price": "$990"
+    },
+    {
+        "img": "images/watch2.jpg",
+        "mane": "Single Tour",
+        "Price": "$990"
+    }
+]

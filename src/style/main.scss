@@ -1,0 +1,350 @@
+    //COLORS
+$btncolor:#F8F8F8;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.icons{
+
+    .bolimlar{
+        margin: 12px;
+    }
+
+    img{
+        width: 20px;
+    }
+}
+// ====================================== Nav ==================================
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 75px  ;
+
+    .searchSec{
+        margin-right: 115px;
+        form{
+            position: relative;
+            .searchInput{
+                width: 560px;
+                padding: 5px;
+                border-radius: 5px;
+                border: 1px solid #808080;
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+            .searchBtn{
+                position: absolute;
+                top: 10%;
+                right: 3%;
+                border: none;
+                background-color: transparent;
+            }
+        }
+    }
+}
+// ========================================= Catigorues ========================
+.catigories{
+    border-top: 1.3px solid #DFDFDF;
+    padding: 20px 75px 10px;
+    display: flex;
+    justify-content: space-between;
+    .dropdown-toggle{
+        .button{
+            display: flex;
+            align-items: center;
+            background-color: $btncolor;
+        }
+        &::after{
+            margin-left: 35px;
+        }
+    }
+    .btn-secondary{
+        background-color:$btncolor;
+        color: #000;
+        border: none;
+     
+    }
+    .gamburger{
+        margin-right: 10px;
+    }
+    .links{
+        display: flex;
+        .link_item{
+            margin:0 25px;
+            list-style-type: none;
+           
+            .link{
+                text-decoration: none;
+                color: #403F3F;
+                padding-bottom: 5px;
+                &:hover{
+                    color: #FF5D18;
+                }
+            }
+            .active{
+                color: #FF5D18  ;
+            }
+        }
+    }
+}
+// ========================================== Home =============================
+.home{
+    background-image: url("../images/homebg.jpg");
+    .main{
+        display: flex;
+        justify-content: space-between;
+        .side1{
+            margin:145px 75px;
+            color: #fff;
+            h3{
+                font-size: 50px;
+                font-family: 'Sarabun', sans-serif;
+            }
+            p{
+              font-family: 'Sarabun', sans-serif;
+            }
+            .buttons{
+                a{
+                    background-color: #FF5D18;
+                    padding: 15px 20px;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    color: #fff;
+                    
+                    &:nth-child(2){
+                        background-color: #5a5a5a54;
+                        margin-left: 10px;
+                        &:hover{
+                            color: #FF5D18;
+                        }
+                    }
+                    svg{
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        .side2{
+            img{
+                width:101%;
+            margin-left: -5px;
+            }
+        }
+        
+    }
+}
+
+// =========================================== Recomendet =====================
+
+.smartwatchs{
+    background-color: #F8F8F8;
+    padding: 50px 0px 50px;
+    .title{
+        text-align: center;
+        p, h4{
+            text-transform: uppercase;
+            color: #302F2F;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+        }
+        h4{
+            color: #111;
+            font-weight: 600;
+        }
+    }
+    .swcards{
+        display: flex;
+        justify-content: center;
+        .swcard{
+            padding: 30px 15px;
+            img{
+            border-radius: 10px;
+            }
+            p{
+                text-align: center;
+                margin-top: 15px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+            }
+            .prise{
+                background-color: #F4E4DE;
+                width: 60px;
+                height: 40px;
+                border-radius: 50px;
+                color: #FF4F04;
+                padding: 8px 13px;
+                transform: translate(100px, 0);
+                // margin-left: 100px;
+            }
+        }
+
+    }
+    .button__area{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;    
+        .exploreBtn{
+            border:1px solid #707070;
+            padding: 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            color: #302F2F;
+            font-weight: 500;
+        }
+
+    }
+}
+// ========================================== Ads =============================
+
+.ads{
+    // padding-bottom: 30px;
+    background-image: url("../images/sale_bg.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 15rem;
+
+    .content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:  75px  ;
+        .about__text{
+            color:#fff;
+            font-weight: 700;
+            font-family: 'Roboto', sans-serif;
+            font-size: 40px;
+            width: 45%;
+        }
+        .shopping{
+            a{
+                border:1px solid #fff;
+                padding: 20px;
+                text-decoration: none;
+                border-radius: 5px;
+                color: #fff;
+                font-weight: 500;
+                padding: 20px 70px;
+            }
+        }
+    }
+}
+
+// ============================================= New collaction =================
+
+  
+    .collection{
+        .container{
+            .row{
+                .collactionCol{
+                   text-align: center;
+                   padding: 20px 0;
+                   p{
+                       margin: 0;
+                   }
+                }
+                .card__area{
+                    .cards{
+                        .card{
+                            border-radius: 10px;
+                            margin: 10px;
+                            background-color: #F5F5F5;
+                            .card-body{
+                                img{
+                                    width:100%;
+                                }
+                            }
+                            .card-footer{
+                                background-color: transparent;
+                                border-top: none;
+                            }
+                            .card__text{
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: baseline;
+                                p{
+                                    font-weight: 600;
+                                    font-size: 17px;
+                                    color: #000;
+                                    font-family: Roboto, "sans-serif";
+                                }
+                                span{
+                                    background-color: #fff;
+                                    padding: 5px 10px;
+                                    border-radius: 20px;
+                                    color: #FF4F04;
+                                    font-weight: 700;
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(2){
+                        .card{
+                            .card-body{
+                                .productPrice{
+                                    display: flex;
+                                    justify-content: space-between;
+                                }
+                            }
+                        }
+                    }
+                }
+                 .card{
+                    border-radius: 20px;
+                        .card-body{
+                            background-color: #F5F5F5;
+                            border-radius: 20px;
+                            img{
+                                width: 88%;
+                            }
+                            .productPrice{
+                                display: flex;
+                                justify-content: space-between;
+                                 span{
+                                     background-color: #000;
+                                     padding: 5px 15px;
+                                     color: #fff;
+                                     font-weight: 600;
+                                     font-family: Roboto, "sans-serif";
+                                     border-radius: 30px;
+                                     &:nth-child(2){
+                                       color: #FF4F04;
+                                      background-color: #fff;
+                                     }
+                                 }
+                            }
+                        }
+                        .card-footer{
+                            border-top: none;
+                            padding: 0 30px;
+                            margin: 0;
+                            p{
+                                color:#7A7A7A;
+                                margin: 0;
+                            }
+                            h4{
+                                font-weight: 600;
+                                font-family: Roboto;
+                                margin: 0;
+                            }
+                        }
+                }
+            }
+        }
+    }
+
+
+
+
+
+  
+ 

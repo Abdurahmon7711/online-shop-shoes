@@ -7,6 +7,7 @@ import shop from '../images/iconsimg/shopping-cart.png';
 import SearchIcon from '@material-ui/icons/Search';
 
 
+
 const Nav = () => {
     return (
         <>
@@ -17,32 +18,30 @@ const Nav = () => {
 
                 <div className="searchSec">
                     <form>
-                        <input 
-                        type="text" 
-                        className="searchInput"
-                        placeholder="Search For Products, Brands & Catigories"
+                        <input
+                            type="text"
+                            className="searchInput"
+                            placeholder="Search For Products, Brands & Catigories"
                         />
                         <button type="button" class="searchBtn">
-                           <SearchIcon/>
+                            <SearchIcon />
                         </button>
                     </form>
                 </div>
 
                 <div className="icons">
                     <a href="#" className="bolimlar">
-                        <img src={like} alt="like icon"/>
+                        <img src={like} alt="like icon" />
                     </a>
                     <a href="#" className="bolimlar">
-                        <img src={user} alt="user icon"/>
+                        <img src={user} alt="user icon" />
                     </a>
                     <a href="#" className="bolimlar">
-                        <img src={shop} alt="shop icon"/>
+                        <img src={shop} alt="shop icon" />
                     </a>
                 </div>
             </nav>
         </>
     );
 };
-
-
 export default Nav;
