@@ -120,7 +120,7 @@ body {
                     text-decoration: none;
                     border-radius: 5px;
                     color: #fff;
-                    
+
                     &:nth-child(2){
                         background-color: #5a5a5a54;
                         margin-left: 10px;
@@ -131,7 +131,12 @@ body {
                     svg{
                         margin-left: 10px;
                     }
+                    &:hover{
+                        // background-color: #000;
+                        color: #090529
+                    }
                 }
+               
             }
         }
         .side2{
@@ -234,6 +239,13 @@ body {
                 color: #fff;
                 font-weight: 500;
                 padding: 20px 70px;
+            }
+            &:hover{
+                background: #fff;
+                a{
+                    color: #5A3A0A;
+                    transform: scale(1.5);
+                }
             }
         }
     }
