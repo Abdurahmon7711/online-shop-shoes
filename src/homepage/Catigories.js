@@ -1,4 +1,4 @@
-import React , {useState} from 'react';
+import React, { useState } from 'react';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import MenuIcon from '@material-ui/icons/Menu';
 const Catigories = () => {
@@ -7,10 +7,10 @@ const Catigories = () => {
     const toggle = () => setDropdownOpen(prevState => !prevState);
 
     return (
-        <div className="catigories">
+        <div className="catigories ">
             <Dropdown isOpen={dropdownOpen} toggle={toggle}>
                 <DropdownToggle caret>
-                    <MenuIcon className="gamburger"/>
+                    <MenuIcon className="gamburger" />
                     All catigories
                 </DropdownToggle>
                 <DropdownMenu>
@@ -25,7 +25,7 @@ const Catigories = () => {
                     <a href="#" className="link active">Home</a>
                 </li>
                 <li className="link_item">
-                    <a href="#" className="link">New arivals</a>                   
+                    <a href="#" className="link">New arivals</a>
                 </li>
                 <li className="link_item">
                     <a href="#" className="link">Trending</a>

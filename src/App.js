@@ -6,7 +6,8 @@ import './style/main.scss';
 import SmartWatch from './Recomendet/SmartWatch';
 import Ads from './ads/Ads';
 import Collec from './Newcollection/Collec';
-
+import Trending from './Newcollection/Trending';
+import Rfooter from './Recomendet/Rfooter';
    
 function App() {
   return (
@@ -17,7 +18,10 @@ function App() {
         <SmartWatch/>
         <Ads/>
         <Collec/>
-        
+        <Ads/>
+        <Trending/>
+        <Ads/>
+        <Rfooter/>
     </>
   );
 }

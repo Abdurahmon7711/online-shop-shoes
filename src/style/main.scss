@@ -23,10 +23,12 @@ body {
 }
 // ====================================== Nav ==================================
 .navigation{
+    width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 75px  ;
+    padding: 20px 0 ;
 
     .searchSec{
         margin-right: 115px;
@@ -54,8 +56,10 @@ body {
 }
 // ========================================= Catigorues ========================
 .catigories{
+    width: 1200px;
+    margin: 0 auto;
     border-top: 1.3px solid #DFDFDF;
-    padding: 20px 75px 10px;
+    padding: 20px 0 10px;
     display: flex;
     justify-content: space-between;
     .dropdown-toggle{
@@ -100,7 +104,11 @@ body {
 // ========================================== Home =============================
 .home{
     background-image: url("../images/homebg.jpg");
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size:cover;
     .main{
+         
         display: flex;
         justify-content: space-between;
         .side1{
@@ -217,12 +225,15 @@ body {
     background-repeat: no-repeat;
     background-size:cover;
     height: 15rem;
+    margin: 50px 0;
 
     .content{
+        width: 1200px;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding:  75px  ;
+        padding:  75px  0;
         .about__text{
             color:#fff;
             font-weight: 700;
@@ -252,8 +263,6 @@ body {
 }
 
 // ============================================= New collaction =================
-
-  
     .collection{
         .container{
             .row{
@@ -299,25 +308,22 @@ body {
                             }
                         }
                     }
-                    &:nth-child(2){
-                        .card{
-                            .card-body{
-                                .productPrice{
-                                    display: flex;
-                                    justify-content: space-between;
-                                }
-                            }
-                        }
-                    }
+                    
                 }
                  .card{
                     border-radius: 20px;
+                    margin: 10px;
                         .card-body{
                             background-color: #F5F5F5;
-                            border-radius: 20px;
+                            border-radius: 20px 20px 0 0;
                             img{
                                 width: 88%;
+                                transition: all ease-in-out 0.5s;
+                                &:hover{
+                                    transform: scale(1.8);
+                                }
                             }
+
                             .productPrice{
                                 display: flex;
                                 justify-content: space-between;
@@ -334,6 +340,11 @@ body {
                                      }
                                  }
                             }
+                     
+                        }
+                        
+                        .big_img_footer{
+                            border-radius: 0 0 20px 20px;
                         }
                         .card-footer{
                             border-top: none;
@@ -354,9 +365,66 @@ body {
         }
     }
 
+// ================================================ Trending  ===================
+
+.trending_title{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+
+    p{
+        margin: 0;
+    }
+}
+.trending-body{
+    width: 1200px;
+    background-color: red;
+    margin: 0 auto;
+}
+
+// ==================================================== footer ========================
+
+.footer{
+    width: 1200px;
+    margin: 0 auto;
+    
+    .footer_row{
+        display: flex;
+        justify-content: space-between;
+
+        .links{
+        
+
+            .linka{
+                .asd{
+                    padding-bottom:50px ;
+                }
+                ul{
+                    padding: 0;
+                    li{
+                        // float: left;
+                        list-style-type: none;
+                        margin-bottom: 13px;
+                        padding: 0;
+
+                        a{
+                            color:#000;
+                            text-decoration: none;
+                        &:hover{
+                            color: sandybrown;
+                        }
+                        }
+
+                    }
+                }
+               
+               
+            }
+        }
+    }
+
+}
 
 
 
 
-  
- 

@@ -4,7 +4,7 @@ import iphone12 from '../images/ipremo.png'
 const Home = () => {
     return (
         <div className="home">
-            <div className="main">
+            <div className="main ">
                 <div className="side1">
                     <h3>
                         GET THE NEW iPHONE 12 PRO
